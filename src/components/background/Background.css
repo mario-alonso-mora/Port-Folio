@@ -1,0 +1,54 @@
+.background 
+{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.one
+{
+    background-image: url('../../image/fondo3.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 110vh;
+    position: relative;
+    display: flex;
+}
+
+.two
+{
+    background-color: rgb(179, 149, 145);
+    height: 100vh;
+    position: relative;
+    display: flex;
+}
+
+.three
+{
+    background-color: rgb(33, 33, 39);
+    height: 60vh;
+    position: relative;
+    display: flex;
+}
+
+.image
+{
+    width: 260px;
+    height: 80px;
+    position: absolute;
+    left: 35%;
+    top: 80px;
+   
+}
+
+@media (max-width: 735px){
+    .image
+    {
+        display: none;
+    }
+    .one
+    {
+        height: 70vh;
+    }
+}
+

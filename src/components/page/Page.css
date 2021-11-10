@@ -1,0 +1,352 @@
+/* ESTA ES LA ZONA DE EL HEADER Y LAS CONFIG INICIALES DE LA PAGE */
+
+.page
+{
+    position: absolute;
+    top: 220px;
+    left: 15%;
+    width: 70vw;
+    height: 220vh;
+    box-shadow: 0px 0px 21px 0px rgba(231, 228, 228, 0.75);
+    overflow: hidden;
+}
+
+.pageHeader
+{
+    top: 40px;
+    left: 10px;
+    display: flex;
+    position: absolute;
+    width: 50%;
+    height: 70vh;
+    flex-direction: row;
+    color: rgb(154, 133, 241); 
+    z-index: 1;
+}
+
+
+
+.pheaderText
+{
+    font-size: 18px;
+}
+.pheaderTitle
+{
+    font-size: 50px;
+    font-weight: rgb(12, 12, 12) 900 italic;
+}
+
+.btn
+{
+    background-color: rgb(233, 8, 15);
+    border: none;
+    color: white;
+    font-weight: 200;
+    padding: 10px 20px;
+    border-radius: 2px;
+    cursor: pointer;
+    font-size:15px;
+    transition: ease-in-out 0.6s;
+}
+
+.btn:hover
+{
+    box-shadow:  0px 0px 16px 0px rgba(255, 254, 254, 0.75);;
+}
+
+
+
+
+
+
+@media (max-width: 735px){
+    .image
+    {
+        display: none;
+    }
+    .pageHeader
+    {
+        left: 0;
+        top: 10px;
+        width: 100%; 
+    }
+    .pheaderText
+    {
+        font-size: 12px;
+    }
+    .pheaderTitle
+    {
+        font-size: 23px;
+        font-weight: rgb(10, 10, 10) 900 italic;
+    }
+    .page
+    {
+        top: 100px;
+        width: 80%;
+        left: 10%;
+    }
+    .btn
+    {
+        padding: 5px 10px;
+        font-size: 10px;
+        box-shadow:  0px 0px 16px 0px rgba(255, 254, 254, 0.75);
+    }
+}
+
+/* AQUI COMIENZA LOS ESTILOS DE EL BODY DEL LA PAGE */
+
+.body
+{
+    width: 100%;
+    height: 70vh;
+    background-color: rgb(43, 42, 48);
+    position: absolute;
+    top: 480px;
+    display: flex;
+    flex-direction: row;
+    color: rgb(243, 242, 250);
+}
+
+.body::before
+{
+    content:'';
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    top: -100px;
+    left: 0;
+    background: linear-gradient(to top, rgb(15, 15, 27), transparent);
+}
+
+.bodyOne
+{
+    width: 50%;
+    text-align:end;
+    margin-right: 10px;
+}
+.bodyTwo
+{
+    margin-left: 40px;
+    text-align: start;
+    overflow-y: scroll;
+    height: 88%;
+}
+.bodyTwo::-webkit-scrollbar
+{
+    display: none;
+}
+
+.bTwoSkill
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin:10px;
+}
+
+.bTwoSkill h1
+{
+    margin:2px;
+    font-size: 20px;
+  
+}
+
+.bTwoSkill h2
+{
+    margin:2px;
+    font-size: 16px;
+}
+.bTwoSkill p
+{
+    margin:2px;
+    font-size: 13px;
+}
+
+.bTskillImage
+{
+    background: rgba(255, 255, 255, 0.13);
+    margin-right: 10px;
+    border-radius: 10px;
+}
+
+img
+{
+    width: 100px;
+    height: 80px;
+    object-fit: contain;
+}
+
+@media (max-width: 735px){
+    .body
+    {
+        top: 300px;
+        flex-direction: column;
+        height: 100vh;
+    }   
+    .bodyOne
+    {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    .bodyOne h1 
+    {
+        font-size: 23px;
+    }
+    .bodyOne p
+    {
+        font-size: 14px;
+    }
+    .bodyTwo
+    {
+        text-align: center;
+    }
+    .bodyTwo h1 
+    {
+        font-size: 23px;
+        margin-right: 20px;
+    }
+    .bTwoSkill
+    {
+        text-align: start;
+    }
+    .bTwoSkill h1
+    {
+        font-size: 18px;
+    }
+    .bTwoSkill h2
+    {
+        font-size: 14px;
+    }
+    .bTwoSkill p
+    {
+        font-size: 10px;
+    }
+}
+
+
+/* AQUI SE ENCUENTRAN LOS ESTILOS DEL PAGE FOOTER */
+
+.pageFooter
+{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 75vh;
+    background-color: rgba(139, 178, 214, 0.431);
+}
+
+
+.gallery
+{
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.columnOne
+{
+    display: flex;
+    flex-direction: column;
+  
+}
+.columnOne a img
+{
+    width: 300px;
+    height: 170px;
+    margin: 10px;
+    object-fit: fill;
+    transition: 0.5s;
+}
+.columnTwo a img
+{
+    width: 300px;
+    height: 170px;
+    margin: 10px;
+    object-fit: fill;
+    transition: 0.5s;
+}
+.columnOne a img:hover
+{
+    transform: scale(1.1);
+}
+.columnTwo a img:hover
+{
+    transform: scale(1.1);
+}
+
+.columnTwo
+{
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width: 735px){
+    .pageFooter
+    {
+        height: 50vh;
+    }
+    .pageFooter h1 
+    {
+        font-size: 23px;
+    }
+    .columnOne a img
+    {
+        width: 100px;
+        height: 100px;
+        margin: 2px;
+    }
+    .columnTwo a img
+    {
+        width: 100px;
+        height: 100px; 
+        margin: 2px;
+    }
+    .gallery
+    {
+        height: 240px;
+    }
+    .page
+    {
+        height: 197vh;
+    }
+}
+
+
+
+@media (min-height: 650px){
+    .page
+    {
+        height: 190vh;
+    }
+}
+
+@media (min-height: 900px){
+    .page
+    {
+        height: 194vh;
+    }
+}
+@media (min-height: 1000px){
+    .page
+    {
+        height: 180vh;
+    }
+}
+
+@media (max-width: 755px) and (orientation: landscape){
+    .body
+    {
+        top: 180px;
+    }
+    .page
+    {
+        top: 77px;
+        height: 230vh;
+    }
+    .pageFooter
+    {
+        height: 80vh;
+    }
+}
